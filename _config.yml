@@ -1,0 +1,12 @@
+title: LLM Brand Tracker
+description: >
+  Free Windows app to track your brand across ChatGPT, Gemini, Claude, Grok, Perplexity and Google AI.
+  Measures AI Share of Voice, brand rank, competitor visibility, and syncs to Google Sheets automatically.
+theme: minima
+plugins:
+  - jekyll-sitemap
+url: "https://lsaini-lab.github.io"
+baseurl: "/llm-brand-tracker-releases"
+author:
+  name: Lucky Saini
+  linkedin: luckysaini1412
