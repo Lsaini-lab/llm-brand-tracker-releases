@@ -1,3 +1,8 @@
+---
+title: Changelog
+layout: default
+---
+
 # Changelog
 
 All notable changes to LLM Brand Tracker are documented here.
@@ -7,22 +12,23 @@ All notable changes to LLM Brand Tracker are documented here.
 ## v1.1.0 — June 2026
 
 ### New Features
-- **Full brand-agnosticism** — the app now works for any brand name. Set yours in Settings and every metric, label, and report updates dynamically. No longer tied to a single client or product.
+- **Full brand-agnosticism** — the app now works for any brand name. Set yours in Settings and every metric, label, and report updates dynamically.
 - **Brand Visibility Score** — a new 0–100 composite score combining Share of Voice %, mention rate across platforms, and best rank. Single number to track week over week.
 - **Keyword Comparison panel** — select 2–3 keywords on the Keywords page to compare their SOV% and rank side by side.
 - **Discover Competitors** — the Brands page now detects brands found in your last run that are not yet in your tracked list and lets you add them with one click.
 
 ### Fixes
+- App icon updated to hexagonal logo in installer, desktop shortcut, taskbar, and title bar at all sizes (16/32/48/256px)
+- Setup wizard now shows the correct hexagonal logo instead of placeholder text
 - Dashboard Total Runs counter now shows correct all-time count across all run history files
 - Chart animations no longer double-fire on load in React StrictMode
 - Keywords page SOV%, rank, and Last Run now populate correctly after each tracking run completes
 - Fixed permanent loading state on the Keywords page when network responses are slow
 - Removed macOS-only titleBar setting that caused a white gap in the Windows title bar
-- App icon regenerated at 16/32/48/256px with the new hexagonal logo design
 
 ### Under the Hood
-- Renamed all internal `pmaps*` variable names to generic equivalents — codebase is now fully brand-neutral
-- Backward-compatible reads of `pmaps_mentioned` field preserved so existing run history loads correctly
+- Renamed all internal variable names to generic equivalents — codebase is now fully brand-neutral
+- Backward-compatible reads of legacy field names preserved so existing run history loads correctly
 
 ---
 
