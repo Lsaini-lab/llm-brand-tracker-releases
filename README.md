@@ -2,7 +2,7 @@
 
 # LLM Brand Tracker
 
-**Free AI brand monitoring tool — track whether ChatGPT, Gemini, Grok, Claude, and Perplexity recommend your brand**
+**Free AI brand monitoring tool — track whether ChatGPT, Gemini, Grok, Claude, Google AI, and Perplexity recommend your brand**
 
 [![Latest Release](https://img.shields.io/github/v/release/Lsaini-lab/llm-brand-tracker-releases?style=for-the-badge&color=7C3AED&label=Latest)](https://github.com/Lsaini-lab/llm-brand-tracker-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Lsaini-lab/llm-brand-tracker-releases/releases/latest)
@@ -67,8 +67,8 @@ This is the measurement layer for **GEO (Generative Engine Optimization) and AEO
       <p align="center"><strong>History & Trends</strong> — Every run logged, drill into any past session</p>
     </td>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/settings.jpg" alt="Settings — brand identity, platform toggles, browser session management" />
-      <p align="center"><strong>Settings</strong> — Brand name, Google Sheets, platform toggles</p>
+      <img src="https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/screenshots-page.jpg" alt="Screenshots — full-page captures of ChatGPT, Gemini, Grok and more after every run" />
+      <p align="center"><strong>Platform Captures</strong> — Full-page AI response screenshots saved per run</p>
     </td>
   </tr>
 </table>
@@ -103,6 +103,8 @@ A full 6-platform run takes 2–3 minutes.
 
 ## Quick start
 
+![Setup wizard — 7 steps, takes about 3 minutes](https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/onboarding.jpg)
+
 1. Download and run the installer
 2. Complete the 7-step setup wizard — enter your brand name, keyword, optionally connect Google Sheets (~3 min)
 3. Log in to each AI platform when prompted — sessions save automatically and last 30–60 days
@@ -131,11 +133,33 @@ Every tracking run syncs to your own Google Sheet automatically:
 
 | Tab | What it tracks |
 |---|---|
-| overview | Full results per platform — status, brand mentioned, rank, SOV%, competitors |
+| overview | Full results per platform — status, brand mentioned, rank, SOV%, response snippet |
 | rankings | Ordered competitor list per platform per run |
 | sources | Every URL the AI cited in its response |
-| trends | SOV%, best rank, rank delta over time per keyword |
+| trends | SOV%, best rank, visibility score, rank delta over time |
 | competitor_sov | Per-competitor share of voice across all platforms |
+
+### What the data looks like
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/gsheet-overview.jpg" alt="Google Sheets overview tab — brand detected, rank, SOV%, citations and response snippet per platform" />
+      <p align="center"><strong>overview tab</strong> — brand rank, SOV%, citations and response snippet per platform per run</p>
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/gsheet-sources.jpg" alt="Google Sheets sources tab — every URL cited by ChatGPT, Grok, Perplexity and more" />
+      <p align="center"><strong>sources tab</strong> — every URL each AI platform cited in its response</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/Lsaini-lab/llm-brand-tracker-releases/main/docs/screenshots/gsheet-trends.jpg" alt="Google Sheets trends tab — SOV% over time, visibility score, rank delta across runs" />
+      <p align="center"><strong>trends tab</strong> — SOV% per run, visibility score, rank delta over time</p>
+    </td>
+    <td width="50%"></td>
+  </tr>
+</table>
 
 See the [Google Sheets setup guide](https://github.com/Lsaini-lab/llm-brand-tracker-releases/blob/main/docs/google-sheets-setup.md) for the one-time configuration (~10 min).
 
